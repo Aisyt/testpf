@@ -1,0 +1,148 @@
+.footer {
+
+    padding: 10rem 0 5rem;
+    background-color: #032174;
+
+    @include for-size(phone-only) {
+        padding: 3rem 0 3rem;
+    }
+
+    .container {
+        max-width: 100rem;
+        margin: 0 auto;
+
+        @include for-size(phone-only) {
+            padding: 0 2rem;
+        }
+    }
+
+    &__top {
+        padding-bottom: 10rem;
+        border-bottom: 1px solid rgba(255,255,255, .07);
+
+        @include for-size(phone-only) {
+            padding-bottom: 3rem;
+            text-align: center;
+        }
+
+        .sub-desc {
+            font-family: 'Poppins';
+            font-size: 2.55rem;
+            font-weight: 400;
+            color: rgba(255,255,255, .7);
+            line-height: 1.7;
+        }
+    
+        .sub-form {
+            margin-top: 4rem;
+        }
+    
+        .sub-submit-field {
+            position: relative;
+            display: inline-block;
+        }
+    
+        input {
+            padding: 1.3rem;
+            width: 30rem;
+            border: 0;
+            background: #053787;
+            border-radius: 3px;
+            font-family: 'Poppins';
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #fff;
+            
+            &::placeholder {
+                font-family: 'Poppins';
+                font-size: 1.6rem;
+                font-weight: 400;
+                color: #C7C7C7;
+                opacity: 1;
+            }
+
+            &:focus { 
+                opacity: 1;
+                caret-color: #fff;
+            }
+        }
+    
+        button {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+    
+            .la-long-arrow-alt-right {
+                font-size: 3.5rem;
+                color: #C7C7C7;
+                transition: all .5s;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        padding-top: 10rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include for-size(phone-only) {
+            padding-top: 3rem;
+            display: block;
+        }
+
+        .copy {
+            font-family: 'Nunito';
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: rgba(255,255,255,.7);
+
+            @include for-size(phone-only) {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: space-between;
+
+            @include for-size(phone-only) {
+                margin-top: 2rem;
+                justify-content: center;
+            }
+
+            a {
+                font-size: 1.5rem;
+                color: rgba(255,255,255,.7);
+                transition: all .5s;
+                
+                &:not(:last-child) {
+                    margin-right: 1.5rem;
+                }
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    
+    .highlight {
+        color: rgba(255,255,255,1);
+        transition: all .5s;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+}

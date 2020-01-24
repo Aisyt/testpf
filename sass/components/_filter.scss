@@ -1,0 +1,33 @@
+.filter {
+    
+    padding: 3rem 0;
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item {
+
+        font-family: 'Nunito';
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 1;
+        color: #888;
+        transition: all .5s;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+
+        &.active {
+            color: #000;
+        }
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+}

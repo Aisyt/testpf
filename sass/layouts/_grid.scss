@@ -1,0 +1,7 @@
+.container-fluid {
+    padding: 0 4rem;
+
+    @include for-size(phone-only) {
+        padding: 0 2rem;
+    }
+}   

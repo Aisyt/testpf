@@ -1,0 +1,37 @@
+.pagination {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__page, &__ellipsis {
+        font-family: 'Nunito';
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #888;
+    }
+
+    &__page {
+        transition: all .5s;
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+    &__disabled {
+        color: #000;
+    }
+
+    a, span {
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    &__prev, &__next{
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: #000;
+    }
+}
